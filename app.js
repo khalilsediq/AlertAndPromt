@@ -86,3 +86,90 @@ qno5.addEventListener("click", () => {
   alert(resutl);
 });
 /////////////Done.
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+/*🔹 Task 1: Create a Full Address
+Instruction:
+Ask the user to enter their street, city, and country. Concatenate these values into one full
+address string and display it like:
+"Your full address is: 123 Main St, Springfield, USA"
+*/
+const h2 = document.querySelector("#h2")
+const task1 = document.querySelector("#task-1")
+task1.addEventListener("click", ()=>{
+    const street = prompt("Enter Your Street Name")
+    const city = prompt("Enter Your city Name")
+    const country = prompt("Enter Your country Name")
+   const result = `Your full address is: ${street}, ${city}, ${country}`
+  h2.innerHTML += result       
+})
+
+
+
+/*🔹 Task 2: Make a Custom Username
+Instruction:
+Ask the user to input their first name and a favorite number. Concatenate them to create a
+simple username like:
+"john42"
+Display the result with a message: "Your new username is: john42"
+*/
+const task2 = document.querySelector("#task2")
+task2.addEventListener("click", ()=>{
+  const userFirstName = prompt("Enter Your First Name")
+  const favoriteNum = prompt("Enter Your favorite Number")
+
+  const result = `Your new username is: ${userFirstName + favoriteNum}`
+  h2.innerHTML = result
+})
+
+
+
+/*🔹 Task 3: Email Generator
+Instruction:
+Ask the user for their first name and last name. Combine them into an email address format
+like:
+"firstname.lastname@example.com"
+Show the result.
+*/
+const task3 = document.querySelector("#task3")
+task3.addEventListener("click", ()=>{
+  const firstName = prompt("Enter Your First Name ")
+  const lastName = prompt("Enter Your last Name")
+  const result = `${firstName + lastName}@gmail.com`
+  h2.innerHTML = result
+})
+
+
+/*🔹 Task 4: Combine Favorite Things
+Instruction:
+Ask the user for their favorite color, animal, and food. Create a sentence like:
+"Your favorite things are: blue dogs and pizza!"
+*/
+const task4 = document.querySelector("#task4")
+task4.addEventListener("click", ()=>{
+  const favColor = prompt("Enter Your Favorite Color")
+  const favAnimal = prompt("Enter Your favorite Animal")
+  const favFood = prompt("Enter Your Favorite Food")
+  const result = `Your favorite things are: ${favColor} ${favAnimal} and ${favFood}`
+  h2.innerHTML = result
+})
+
+
+
+
+/*
+🔹 Task 5: Quote with Author
+Instruction:
+Ask the user for a quote and the author’s name. Display it in the format:
+"The only limit is your mind." - John Doe
+*/
+const task5 = document.querySelector("#task5")
+task5.addEventListener("click", ()=>{
+  const userQuote = prompt("Enter Your favorite Quote.")
+  const authorsName = prompt("Enter Authores Name")
+  const result = `${userQuote} - ${authorsName}`
+  h2.innerHTML = result
+})
